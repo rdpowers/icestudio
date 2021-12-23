@@ -1,0 +1,82 @@
+# -----------------------------------------------------------------------------
+#- LCA OHMC2022 Rockling constraint file (.pcf)
+#- By Robert Powers
+#- December - 2021
+#- GPL license
+# -----------------------------------------------------------------------------
+
+
+# ------------ Buttons and LEDs -----------------------------------------------
+set_io --warn-no-port BTN_2  11  # input
+set_io --warn-no-port DIP_1  43  # input
+set_io --warn-no-port DIP_2  42  # input
+
+
+# ------------ RGB LED Driver -------------------------------------------------
+set_io --warn-no-port LED_R 40  # output
+set_io --warn-no-port LED_G 39  # output
+set_io --warn-no-port LED_B 41  # output
+
+
+
+# ------------ System 48 MHz clock --------------------------------------------
+set_io --warn-no-port CLK 20  # input
+set_frequency CLK 48
+
+# ------------ USB ------------------------------------------------------------
+set_io --warn-no-port USB_DP  25  # input
+set_io --warn-no-port USB_DN  23  # input
+set_io --warn-no-port USB_DET 26  # input
+
+
+# ------------ SPI Flash ------------------------------------------------------
+set_io --warn-no-port F_SCK 15
+set_io --warn-no-port F_SSB 16
+set_io --warn-no-port F_IO0 14
+set_io --warn-no-port F_IO1 17
+set_io --warn-no-port F_IO2 18
+set_io --warn-no-port F_IO3 19
+
+
+# ------------SPARE GPIO -----------------------------------------------------------
+set_io --warn-no-port Spare_22a  12 # io
+set_io --warn-no-port Spare_44b  34 # io
+set_io --warn-no-port Spare_46b_g0  35 # io
+set_io --warn-no-port Spare_48b  36 # io
+set_io --warn-no-port Spare_50b  38 # io
+
+
+# ------------OTHER GPIO -----------------------------------------------------------
+set_io --warn-no-port TRRS_Ring1_Switch  2 # input
+set_io --warn-no-port TRRS_Tip_Switch  3 # input
+
+# ------------i2c Device-----------------------------------------------------------
+set_io --warn-no-port i2c0_SCL  9 # input
+set_io --warn-no-port i2c0_SDA  10 # io
+
+# ------------i2c Master-----------------------------------------------------------
+set_io --warn-no-port i2c1_SCL  31 # input
+set_io --warn-no-port i2c1_SDA  32 # io
+
+# ------------i2s Master-----------------------------------------------------------
+set_io --warn-no-port i2s_SCLK  46 # output
+set_io --warn-no-port i2s_LRCLK  47 # output
+set_io --warn-no-port i2s_MCLK  44 # output
+set_io --warn-no-port i2s_DIN  48 # input
+set_io --warn-no-port i2s_DOUT  45 # output
+
+
+# ------------Amplifier Control -----------------------------------------------------------
+set_io --warn-no-port AMP_VOL  4 # output
+set_io --warn-no-port AMP_PL  6 # output
+
+# ------------DAC -----------------------------------------------------------
+set_io --warn-no-port DAC_Latch  27 # output
+
+
+
+# ------------AFE -----------------------------------------------------------
+set_io --warn-no-port VO_PITCH  13 # input
+set_io --warn-no-port VO_VOLUME  37 # input
+set_io --warn-no-port DDS_TH_VOL  28 # output
+set_io --warn-no-port DDS_TH_PITCH  21 # output

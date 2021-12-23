@@ -38,6 +38,7 @@
   {
     "type": "UP5K",
     "boards": [
+      "Rockling",
       "iCEBreaker",
       "iCEBreaker-bitsy0",
       "iCEBreaker-bitsy1",
@@ -49,7 +50,7 @@
       "iCE40-UP5K",
       "fomu",
       "iCESugar_1_5",
-      "OK-iCE40Pro"
+      "OK-iCE40Pro"      
     ]
   },
   {

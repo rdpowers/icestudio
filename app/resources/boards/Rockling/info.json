@@ -1,0 +1,12 @@
+{
+  "label": "Rockling",
+  "datasheet": "https://github.com/rdpowers/OHMC2022",
+  "interface": "SDU",
+  "FPGAResources": {
+    "ffs": 5280,
+    "luts": 5280,
+    "pios": 40,
+    "plbs": 660,
+    "brams": 30
+  }
+}
